@@ -11,6 +11,7 @@ let id = document.querySelector("#id").value;
 let title = document.querySelector("#title").value;
 let salary = Number(document.querySelector("#annual-salary").value);
 let employee = document.querySelector("#employee-table");
+let totalSalary = document.querySelector("#total-salary");
 employee.innerHTML += `
 <tr>
     <td>${firstName}</td> 
@@ -22,8 +23,9 @@ employee.innerHTML += `
 
 </tr>
 `
+// salary adds to total salary, passed to html
 salaryTotal = salaryTotal + salary;
-document.querySelector("#total-salary").innerHTML = `
+totalSalary.innerHTML = `
 Salary Total = ${salaryTotal}
 `
 
