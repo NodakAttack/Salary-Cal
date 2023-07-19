@@ -8,6 +8,18 @@ let lastName = document.querySelector("#last-name").value;
 let id = document.querySelector("#id").value;
 let title = document.querySelector("#title").value;
 let salary = document.querySelector("#annual-salary").value;
+let employee = document.querySelector("#employee-table");
+employee.innerHTML += `
+<tr>
+    <td>${firstName}</td> 
+    <td>${lastName}</td>
+    <td>${id}</td>
+    <td>${title}</td>
+    <td>${salary}</td>
+    <td><button onclick="deleteEmployee(event)" >Delete</button></td>
+
+</tr>
+`
 
 
 
